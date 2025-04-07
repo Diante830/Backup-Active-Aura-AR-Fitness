@@ -1,0 +1,157 @@
+body {
+  background-color: #21182D;
+  margin: 0;
+  padding: 0;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-image: url('/images/aurabig.svg') ;
+  
+}
+
+.header-container {
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  height: 100vh;
+  padding: 50px 0;
+  background-image: url('/images/aurahome.jpg');
+  background-size: 100% 100%;
+}
+
+.download-container{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 35vw;
+  margin-top: 100px;
+  border-radius: 10px;
+  padding: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effect */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.545);
+  background-color:rgba(255, 255, 255, 0.126);
+  backdrop-filter: blur(8px) ;
+  -webkit-backdrop-filter: blur(10px) brightness(1.2);
+  font-size: 18px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+}
+.card:hover {
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.545);
+}
+.btn-primary {
+  color: white;
+  border: none;
+  margin: 20px;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+
+}
+.btn-primary:hover {
+  transform: translateY(-10px) scale(1.05);
+}
+.card-body {
+  padding: 10px;
+}
+
+.card-title {
+  font-size: 2vw;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  color: #fff;
+}
+
+.card-text {
+  font-size: 1vw;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  color: #fff;
+}
+
+h6{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  color: #fff;
+  font-size: 28px;
+  margin-bottom: 5px;
+}
+
+.white-logo{
+  margin-top: 30px;
+  margin-bottom: -50px;
+
+  @media (min-width: 640px) {
+    width: 50%;
+    height: auto;
+}
+
+}
+
+#newsletter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+.newsletter-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.newsletter-left {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.newsletter-left h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.newsletter-left p {
+  font-size: 1rem;
+  color: #555;
+}
+
+.newsletter-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.newsletter-right form {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.email-input {
+  padding: 10px;
+  font-size: 1rem;
+  width: 80%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.subscribe-btn {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.subscribe-btn:hover {
+  background-color: #0056b3;
+}

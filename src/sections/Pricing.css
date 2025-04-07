@@ -1,0 +1,94 @@
+.pricing-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  height: 100vh;
+  padding: 50px 0;
+  /* Add vertical padding for spacing */
+  background-image: url('/images/pricingbackground.png');
+  background-size: 100% 100%;
+  object-fit: cover;
+}
+
+.pricing-title{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.price-card {
+  position: relative;
+  width: 350px;
+  height: 490px;
+  margin: 20px;
+  border: 2px solid #AC7EF0;
+  border-radius: 10px;
+  overflow: hidden; /* Prevents anything from overflowing the card */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: rgba(172, 126, 240, 0.1);
+  backdrop-filter: blur(8px) ;
+  overflow: hidden;
+}
+
+@media (max-width: 600px) {
+  .price-card {
+    width: 100%; 
+    height: auto; 
+    margin: 10px; 
+  }
+}
+
+.price-card:hover {
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.545);
+}
+
+.card-top {
+  position: relative;
+  padding: 30px;
+  background-color: rgba(172, 126, 240, 0.1);
+  border-bottom: 1px solid #AC7EF0;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  color: #fff;
+  font-size: 0.9vw;
+  
+}
+
+.card-tag {
+  position: absolute;
+  top: -1px;
+  left: -5px;
+  background-color: #AC7EF0;
+  color: white;
+  padding: 5px 10px;
+  font-size: 14px;
+  border-radius: 5px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+}
+
+.card-bottom {
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.1);
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  color: #fff;
+  text-align: left;
+  font-size: 1vw;
+  
+}
+
+.card h2 {
+  margin-top: 0;
+}
+
+h6{
+  position: relative;
+  color:#fff;
+}
+
+.price-header{
+  display:inline;
+}

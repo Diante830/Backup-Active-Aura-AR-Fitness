@@ -1,0 +1,169 @@
+.news-container {
+    text-align: center;
+    padding: 40px 20px;
+    height: 650px;
+    
+}
+
+
+
+.news-container h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.news-container h3 {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.newsletter-form-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    /* To limit the width of the container */
+    margin: 0 auto;
+    padding-top: 10%;
+}
+
+.newsletter-left {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.newsletter-left h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    text-align: left;
+
+}
+
+.newsletter-left p {
+    font-size: 1rem;
+    color: #fff;
+    text-align: left;
+}
+
+.newsletter-right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+.newsletter-right form {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+    
+
+}
+
+.email-input {
+    padding: 10px;
+    font-size: 1rem;
+    width: 400px;
+    border: 1px solid #342547;
+    border-radius: 5px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.545);
+    background-color:  rgba(172, 126, 240, 0.1);
+    color: #AC7EF0;
+}
+
+.subscribe-btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.subscribe-btn:hover {
+    background-color: #0056b3;
+}
+
+.sign-up {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    color: #fff;
+    
+}
+
+.stay-updated {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    color: #fff;
+    
+    
+}
+
+.send-message {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    color: #fff;
+   
+}
+
+@media screen and (max-width: 768px) {
+    .newsletter-form-container {
+        flex-direction: column;
+        padding-top: 0; /* Adjust the top padding to make it more balanced */
+    }
+
+    .newsletter-left {
+        margin-right: 0;
+        text-align: center;
+    }
+
+    .newsletter-left h2 {
+        font-size: 2rem; /* Smaller font size for h2 */
+    }
+
+    .newsletter-left p {
+        font-size: 0.9rem; /* Reduce font size on mobile */
+    }
+
+    .newsletter-right {
+        width: 100%; /* Make sure the form section takes full width */
+    }
+
+    .email-input {
+        width: 100%; /* Make the input field responsive */
+        margin-bottom: 10px; /* Add some space below the input field */
+    }
+
+    .subscribe-btn {
+        width: 100%; /* Make the button take the full width */
+        margin-left: 0; /* Remove margin for mobile */
+        margin-top: 10px; /* Add a little space between input and button */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .newsletter-left h2 {
+        font-size: 1.8rem; /* Smaller font size on extra small screens */
+    }
+
+    .newsletter-left p {
+        font-size: 0.85rem; /* Further reduce font size */
+    }
+
+    .email-input {
+        font-size: 1rem; /* Adjust input font size */
+        padding: 12px; /* Increase padding for ease of typing */
+    }
+
+    .subscribe-btn {
+        font-size: 1.1rem; /* Increase button font size slightly */
+        padding: 12px; /* Increase padding to make the button easier to tap */
+    }
+}
